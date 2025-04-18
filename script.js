@@ -1,11 +1,11 @@
-let videoData = [];  // 存储原始视频数据
-let filteredVideos = [];  // 存储筛选后的视频数据
-let currentIndex = 0; // 当前显示的视频索引
+let videoData = [];  // 存储原始数据
+let filteredVideos = [];  // 存储筛选后的数据
+let currentIndex = 0; // 当前显示的索引
 const videosPerPage = 10; // 每页显示 10 条
 
 // 页面加载时获取 JSON 数据
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("videos.json")
+    fetch("data.json")
         .then(response => response.json())
         .then(data => {
             videoData = data;
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// 渲染视频列表
+// 渲染列表
 function renderVideos(reset = false) {
     const container = document.getElementById("video-list");
     if (reset) {
@@ -39,7 +39,7 @@ function renderVideos(reset = false) {
         
         // 添加点击事件监听器
         card.addEventListener("click", function () {
-            window.open(video.link, "_blank"); // 打开视频链接
+            window.open(video.link, "_blank"); // 打开链接
         });
 
         card.innerHTML = `
@@ -66,7 +66,7 @@ function renderVideos(reset = false) {
 function searchVideos() {
     const query = document.getElementById("search-input").value.trim();
     if (query === "") {
-        filteredVideos = [...videoData]; // 为空时恢复所有视频
+        filteredVideos = [...videoData]; // 为空时恢复所有
     } else {
         try {
             const regex = new RegExp(query, "i"); // 创建正则表达式，"i" 忽略大小写
@@ -80,7 +80,7 @@ function searchVideos() {
     renderVideos(true);
 }
 
-// 加载更多视频
+// 加载更多
 function loadMoreVideos() {
     renderVideos(false);
 }
