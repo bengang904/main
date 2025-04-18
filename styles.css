@@ -8,12 +8,13 @@ body {
     margin: 20px auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* 允许在小屏时自动换行 */
     gap: 15px;
+    max-width: 90vw; /* 避免超出屏幕 */
 }
 
 .search-bar input {
-    width: 180px;
-    max-width: 50%;
+    flex: 1 1 30%;
     padding: 12px 20px;
     border: 2px solid #ddd;
     border-radius: 30px;
@@ -21,6 +22,8 @@ body {
     outline: none;
     transition: all 0.3s ease;
     background-color: #f1f1f1;
+    min-width: 50px;
+    max-width: 300px;
 }
 
 .search-bar input:focus {
@@ -30,7 +33,7 @@ body {
 }
 
 .search-bar button {
-    max-width: 20%;
+    flex: 0 0 auto;
     padding: 12px 20px;
     border: none;
     background-color: #1d1d1d;
@@ -39,8 +42,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    white-space: nowrap;   /* 不允许换行 */
-    min-width: 100px;      /* 可根据情况调整 */
+    min-width: 100px;
+    white-space: nowrap;
 }
 
 
