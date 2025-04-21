@@ -2,15 +2,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     text-align: center;
+    margin: 0; /* 取消默认的 body 边距 */
 }
 
 .search-bar {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* 允许在小屏时自动换行 */
+    flex-wrap: wrap;
     gap: 15px;
-    max-width: 90vw; /* 避免超出屏幕 */
+    max-width: 90vw;
 }
 
 .search-bar input {
@@ -46,7 +47,6 @@ body {
     white-space: nowrap;
 }
 
-
 .search-bar button:hover {
     background-color: #252525;
     transform: scale(1.05);
@@ -70,10 +70,10 @@ body {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;  
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: space-between;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -84,7 +84,7 @@ body {
 }
 
 .video-card img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 5px;
     cursor: pointer;
@@ -132,4 +132,17 @@ body {
 
 #load-more:active {
     transform: scale(1);
+}
+
+footer {
+    color: #e2e2e2;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1c1c1c;
+    margin: 0; 
+}
+a {
+    color: #b1aff3;
 }
