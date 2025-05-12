@@ -1,33 +1,30 @@
-// script.js
-
-// 引入 videoData.js 数据
-import { videoData } from './videoData.js';
-
+let videoData = [];  // 存储原始数据
 let filteredVideos = [];  // 存储筛选后的数据
 let currentIndex = 0; // 当前显示的索引
 const videosPerPage = 10; // 每页显示 10 条
 
-// 页面加载时
+// 页面加载时获取 JSON 数据
 document.addEventListener("DOMContentLoaded", function () {
-    filteredVideos = [...videoData]; // 初始时，全部数据可用
-    currentIndex = 0;
-    renderVideos(true);
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            videoData = data;
+            filteredVideos = [...videoData]; // 初始时，全部数据可用
+            currentIndex = 0;
+            renderVideos(true);
+        })
+        .catch(error => console.error("加载 JSON 失败:", error));
 
-    // 监听搜索框的回车键并加入防抖
+    // 监听搜索框的回车键
     const searchInput = document.getElementById("search-input");
-    searchInput.addEventListener("input", debounce(searchVideos, 300)); // 防抖优化
+    searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            searchVideos();
+        }
+    });
 });
 
-// 防抖函数
-function debounce(func, delay) {
-    let timeout;
-    return function () {
-        clearTimeout(timeout);
-        timeout = setTimeout(func, delay);
-    };
-}
-
-// 渲染视频列表
+// 渲染列表
 function renderVideos(reset = false) {
     const container = document.getElementById("video-list");
     if (reset) {
@@ -39,14 +36,14 @@ function renderVideos(reset = false) {
     videosToShow.forEach(video => {
         const card = document.createElement("div");
         card.classList.add("video-card");
-
+        
         // 添加点击事件监听器
         card.addEventListener("click", function () {
             window.open(video.link, "_blank"); // 打开链接
         });
 
         card.innerHTML = `
-            <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
+            <img src="${video.thumbnail}" alt="${video.title}">
             <h3>${video.title}</h3>
             <p>类型: ${video.type}</p>
         `;
