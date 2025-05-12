@@ -1,7 +1,7 @@
 // script.js
 
 // 引入 videoData.js 数据
-import { videoData } from './videoData.js';
+import { videoData } from 'videoData.js';
 
 let filteredVideos = [];  // 存储筛选后的数据
 let currentIndex = 0; // 当前显示的索引
