@@ -1,0 +1,56 @@
+[
+    {
+        "title": "网站地址收录",
+        "type": "地址簿",
+        "link": "https://web.2024-10-24.zip",
+        "thumbnail": "images/web.jpg"
+    },
+    {
+        "title": "Android 免费应用",
+        "type": "应用簿",
+        "link": "https://apkapp.2024-10-24.zip",
+        "thumbnail": "images/apkapp.jpg"
+    },
+    {
+        "title": "Windows 免费应用",
+        "type": "应用簿",
+        "link": "https://winapp.2024-10-24.zip",
+        "thumbnail": "images/winapp.jpg"
+    },
+    {
+        "title": "Windows 专有应用",
+        "type": "应用簿",
+        "link": "https://winapp2.2024-10-24.zip",
+        "thumbnail": "images/winapp2.jpg"
+    },
+    {
+        "title": "操作系统(OS)镜像",
+        "type": "IPFS",
+        "link": "https://os.2024-10-24.zip",
+        "thumbnail": "images/os.jpg"
+    },
+    {
+        "title": "开源定义地图",
+        "type": "地图簿",
+        "link": "https://map.2024-10-24.zip",
+        "thumbnail": "images/map.png"
+    },
+    {
+        "title": "Flash 网页游戏",
+        "type": "游戏簿",
+        "link": "https://flash.2024-10-24.zip",
+        "thumbnail": "images/flash.jpg"
+    },
+    {
+        "title": "3D 模型库",
+        "type": "3D库",
+        "link": "https://3d.2024-10-24.zip",
+        "thumbnail": "images/3d.jpg"
+    },
+    {
+        "title": "图像编辑工具",
+        "type": "工具簿",
+        "link": "https://photo.2024-10-24.zip",
+        "thumbnail": "images/photo.jpg"
+    }
+]
