@@ -20,8 +20,8 @@
     {
         "title": "Windows 专有应用",
         "type": "应用簿",
-        "link": "images/winapp2.jpg",
-        "thumbnail": ""
+        "link": "https://winapp2.2024-10-24.zip",
+        "thumbnail": "images/winapp2.jpg"
     },
     {
         "title": "操作系统(OS)镜像",
