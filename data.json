@@ -6,12 +6,6 @@
         "thumbnail": "images/web.jpg"
     },
     {
-        "title": "Android 免费应用",
-        "type": "应用簿",
-        "link": "https://apkapp.2024-10-24.zip",
-        "thumbnail": "images/apkapp.jpg"
-    },
-    {
         "title": "Windows 免费应用",
         "type": "应用簿",
         "link": "https://winapp.2024-10-24.zip",
@@ -22,6 +16,18 @@
         "type": "应用簿",
         "link": "https://winapp2.2024-10-24.zip",
         "thumbnail": "images/winapp2.jpg"
+    },
+    {
+        "title": "MacOS 免费应用",
+        "type": "应用簿",
+        "link": "https://macapp.2024-10-24.zip",
+        "thumbnail": "images/macapp.jpg"
+    },
+    {
+        "title": "Android 免费应用",
+        "type": "应用簿",
+        "link": "https://apkapp.2024-10-24.zip",
+        "thumbnail": "images/apkapp.jpg"
     },
     {
         "title": "操作系统(OS)镜像",
