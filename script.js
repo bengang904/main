@@ -1,7 +1,7 @@
 let videoData = [];  // 存储原始数据
 let filteredVideos = [];  // 存储筛选后的数据
 let currentIndex = 0; // 当前显示的索引
-const videosPerPage = 10; // 每页显示 10 条
+const videosPerPage = 8; // 每页显示 8 条
 
 // 页面加载时获取 JSON 数据
 document.addEventListener("DOMContentLoaded", function () {
