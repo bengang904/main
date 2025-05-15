@@ -1,27 +1,16 @@
-/* 页面整体布局 */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* 保证页面最小高度为视口高 */
 }
 
-/* 主体内容容器 */
-main {
-    flex: 1; /* 占据除 footer 以外的空间 */
-}
-
-/* 搜索栏样式 */
 .search-bar {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* 允许在小屏时自动换行 */
     gap: 15px;
-    max-width: 90vw;
+    max-width: 90vw; /* 避免超出屏幕 */
 }
 
 .search-bar input {
@@ -57,6 +46,7 @@ main {
     white-space: nowrap;
 }
 
+
 .search-bar button:hover {
     background-color: #252525;
     transform: scale(1.05);
@@ -74,22 +64,19 @@ main {
     margin-top: 20px;
 }
 
-/* 视频卡片保持自然尺寸 */
 .video-card {
     width: 150px;
     background: white;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: center;  
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
     justify-content: space-between;
     transition: transform 0.3s ease;
     cursor: pointer;
-    height: auto; /* 避免被拉长 */
-    align-self: flex-start;
 }
 
 .video-card:hover {
@@ -97,7 +84,7 @@ main {
 }
 
 .video-card img {
-    width: 100%;
+    width: 100%; 
     height: auto;
     border-radius: 5px;
     cursor: pointer;
@@ -145,21 +132,4 @@ main {
 
 #load-more:active {
     transform: scale(1);
-}
-
-/* 页脚置底且不拉伸内容 */
-footer {
-    color: #e2e2e2;
-    text-align: center;
-    background-color: #1c1c1c;
-    margin: 0;
-    margin-top: 40px;
-    padding: 3px 0;
-    font-size: 13px;
-    width: 100%;
-}
-
-/* 链接颜色 */
-a {
-    color: #b1aff3;
 }
