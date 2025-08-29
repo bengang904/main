@@ -29,6 +29,12 @@
         "link": "https://apkapp.2024-10-24.zip",
         "thumbnail": "images/apkapp.jpg"
     },
+     {
+        "title": "ios 免费应用",
+        "type": "应用簿",
+        "link": "https://iosapp.2024-10-24.zip",
+        "thumbnail": "images/iosapp.png"
+    },
     {
         "title": "操作系统(OS)镜像",
         "type": "IPFS",
@@ -60,3 +66,4 @@
         "thumbnail": "images/photo.jpg"
     }
 ]
+
