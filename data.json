@@ -35,6 +35,12 @@
         "link": "https://iosapp.2024-10-24.zip",
         "thumbnail": "images/iosapp.png"
     },
+     {
+        "title": "Chrome WebStore",
+        "type": "扩展程序",
+        "link": "https://webstore.2024-10-24.zip",
+        "thumbnail": "images/webstore.png"
+    },
     {
         "title": "操作系统(OS)镜像",
         "type": "IPFS",
@@ -66,4 +72,5 @@
         "thumbnail": "images/photo.jpg"
     }
 ]
+
 
