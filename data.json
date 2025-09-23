@@ -70,7 +70,14 @@
         "type": "工具簿",
         "link": "https://photo.2024-10-24.zip",
         "thumbnail": "images/photo.jpg"
+    },
+     {
+        "title": "字符处理工具",
+        "type": "工具簿",
+        "link": "https://char.2024-10-24.zip",
+        "thumbnail": "images/char.jpg"
     }
 ]
+
 
 
