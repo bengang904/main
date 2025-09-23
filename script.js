@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("search-input");
     searchInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            searchVideos();
+            search();
         }
     });
 });
@@ -63,7 +63,7 @@ function renderVideos(reset = false) {
 }
 
 // 搜索功能
-function searchVideos() {
+function search() {
     const query = document.getElementById("search-input").value.trim();
     if (query === "") {
         filteredVideos = [...videoData]; // 为空时恢复所有
@@ -84,4 +84,5 @@ function searchVideos() {
 function loadMoreVideos() {
     renderVideos(false);
 }
+
 
