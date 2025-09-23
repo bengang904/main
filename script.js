@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 渲染列表
 function renderVideos(reset = false) {
-    const container = document.getElementById("video-list");
+    const container = document.getElementById("list");
     if (reset) {
         container.innerHTML = ""; // 只在搜索或初次加载时清空
         currentIndex = 0;
@@ -84,3 +84,4 @@ function searchVideos() {
 function loadMoreVideos() {
     renderVideos(false);
 }
+
