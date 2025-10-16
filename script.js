@@ -1,21 +1,30 @@
-let videoData = [];  // 存储原始数据
-let filteredVideos = [];  // 存储筛选后的数据
-let currentIndex = 0; // 当前显示的索引
-const videosPerPage = 8; // 每页显示 8 条
+let videoData = [];
+let filteredVideos = [];
+let currentIndex = 0;
+const videosPerPage = 8;
 
-// 页面加载时获取 JSON 数据
 document.addEventListener("DOMContentLoaded", function () {
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
             videoData = data;
-            filteredVideos = [...videoData]; // 初始时，全部数据可用
-            currentIndex = 0;
-            renderVideos(true);
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialQuery = urlParams.get('q');
+            
+            if (initialQuery) {
+                const searchInput = document.getElementById("search-input");
+                searchInput.value = initialQuery;
+                executeSearch(initialQuery);
+            } else {
+                filteredVideos = [...videoData]; 
+                currentIndex = 0;
+                renderVideos(true);
+            }
+
         })
         .catch(error => console.error("加载 JSON 失败:", error));
 
-    // 监听搜索框的回车键
     const searchInput = document.getElementById("search-input");
     searchInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
@@ -24,11 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// 渲染列表
 function renderVideos(reset = false) {
     const container = document.getElementById("list");
     if (reset) {
-        container.innerHTML = ""; // 只在搜索或初次加载时清空
+        container.innerHTML = "";
         currentIndex = 0;
     }
 
@@ -37,9 +45,8 @@ function renderVideos(reset = false) {
         const card = document.createElement("div");
         card.classList.add("video-card");
         
-        // 添加点击事件监听器
         card.addEventListener("click", function () {
-            window.open(video.link, "_blank"); // 打开链接
+            window.open(video.link, "_blank");
         });
 
         card.innerHTML = `
@@ -51,9 +58,8 @@ function renderVideos(reset = false) {
         container.appendChild(card);
     });
 
-    currentIndex += videosToShow.length; // 更新索引
+    currentIndex += videosToShow.length;
 
-    // 控制 "查看更多" 按钮的显示
     const loadMoreBtn = document.getElementById("load-more");
     if (currentIndex < filteredVideos.length) {
         loadMoreBtn.style.display = "block";
@@ -62,27 +68,37 @@ function renderVideos(reset = false) {
     }
 }
 
-// 搜索功能
-function search() {
-    const query = document.getElementById("search-input").value.trim();
+function executeSearch(query) {
     if (query === "") {
-        filteredVideos = [...videoData]; // 为空时恢复所有
+        filteredVideos = [...videoData];
     } else {
         try {
-            const regex = new RegExp(query, "i"); // 创建正则表达式，"i" 忽略大小写
+            const regex = new RegExp(query, "i"); 
             filteredVideos = videoData.filter(video => regex.test(video.title));
         } catch (error) {
             console.error("无效的正则表达式:", error);
             alert("搜索关键字格式错误，请检查后重试！");
-            return;
+            filteredVideos = [...videoData];
         }
     }
     renderVideos(true);
 }
 
-// 加载更多
+function search() {
+    const query = document.getElementById("search-input").value.trim();
+    
+    const baseUrl = window.location.origin + window.location.pathname;
+    let newUrl;
+    
+    if (query === "") {
+        newUrl = baseUrl;
+    } else {
+        newUrl = `${baseUrl}?q=${encodeURIComponent(query)}`;
+    }
+    
+    window.location.href = newUrl;
+}
+
 function loadMoreVideos() {
     renderVideos(false);
 }
-
-
