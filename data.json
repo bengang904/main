@@ -12,12 +12,6 @@
         "thumbnail": "images/winapp.jpg"
     },
     {
-        "title": "Windows 专有应用",
-        "type": "应用簿",
-        "link": "https://winapp2.2024-10-24.zip",
-        "thumbnail": "images/winapp2.jpg"
-    },
-    {
         "title": "MacOS 免费应用",
         "type": "应用簿",
         "link": "https://macapp.2024-10-24.zip",
@@ -40,12 +34,6 @@
         "type": "扩展程序",
         "link": "https://webstore.2024-10-24.zip",
         "thumbnail": "images/webstore.png"
-    },
-    {
-        "title": "操作系统(OS)镜像",
-        "type": "IPFS",
-        "link": "https://os.2024-10-24.zip",
-        "thumbnail": "images/os.jpg"
     },
     {
         "title": "开源定义地图",
@@ -78,6 +66,7 @@
         "thumbnail": "images/char.jpg"
     }
 ]
+
 
 
 
