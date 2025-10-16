@@ -1,7 +1,7 @@
 [
     {
-        "title": "文件存储",
-        "type": "去中心化存储",
+        "title": "去中心化存储",
+        "type": "文件存储",
         "link": "https://dapp.2024-10-24.zip",
         "thumbnail": "images/dapp.png"
     },
@@ -72,6 +72,7 @@
         "thumbnail": "images/char.jpg"
     }
 ]
+
 
 
 
