@@ -76,8 +76,15 @@
         "type": "工具簿",
         "link": "https://audio.2024-10-24.zip",
         "thumbnail": "images/audio.jpg"
+    },
+     {
+        "title": "Tor 地址收录",
+        "type": "地址簿",
+        "link": "https://tor.2024-10-24.zip",
+        "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
