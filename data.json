@@ -78,12 +78,19 @@
         "thumbnail": "images/audio.jpg"
     },
      {
+        "title": "Unicode 字符簿",
+        "type": "字符簿",
+        "link": "https://unicode.2024-10-24.zip",
+        "thumbnail": "images/unicode.jpg"
+    },
+     {
         "title": "Tor 地址收录",
         "type": "地址簿",
         "link": "https://tor.2024-10-24.zip",
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
