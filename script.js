@@ -8,34 +8,26 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             itemData = data;
-            
             const urlParams = new URLSearchParams(window.location.search);
             const initialQuery = urlParams.get('q');
-            
             if (initialQuery) {
-                const searchInput = document.getElementById("search-input");
-                searchInput.value = initialQuery;
+                document.getElementById("search-input").value = initialQuery;
                 executeSearch(initialQuery);
             } else {
-                filteredItems = [...itemData]; 
-                currentIndex = 0;
+                filteredItems = [...itemData];
                 renderItems(true);
             }
         })
         .catch(error => console.error("加载 JSON 失败:", error));
 
-    const searchInput = document.getElementById("search-input");
-    searchInput.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            search();
-        }
+    document.getElementById("search-input").addEventListener("keydown", e => {
+        if (e.key === "Enter") search();
     });
 });
 
 function renderItems(reset = false) {
     const container = document.getElementById("list");
     const loadMoreBtn = document.getElementById("load-more");
-
     if (reset) {
         container.innerHTML = "";
         currentIndex = 0;
@@ -45,43 +37,29 @@ function renderItems(reset = false) {
         loadMoreBtn.style.display = "none";
         return;
     }
-
     const itemsToShow = filteredItems.slice(currentIndex, currentIndex + itemsPerPage);
     itemsToShow.forEach(item => {
         const card = document.createElement("div");
         card.classList.add("item-card");
-        
-        card.addEventListener("click", function () {
-            window.open(item.link, "_blank");
-        });
-
+        card.addEventListener("click", () => window.open(item.link, "_blank"));
         card.innerHTML = `
             <img src="${item.thumbnail}" alt="${item.title}">
             <h3>${item.title}</h3>
             <p>类型: ${item.type}</p>
         `;
-
         container.appendChild(card);
     });
-
     currentIndex += itemsToShow.length;
-
-    if (currentIndex < filteredItems.length) {
-        loadMoreBtn.style.display = "block";
-    } else {
-        loadMoreBtn.style.display = "none";
-    }
+    loadMoreBtn.style.display = currentIndex < filteredItems.length ? "block" : "none";
 }
 
 function executeSearch(query) {
-    if (query === "") {
-        filteredItems = [...itemData];
-    } else {
+    if (query === "") filteredItems = [...itemData];
+    else {
         try {
-            const regex = new RegExp(query, "i"); 
+            const regex = new RegExp(query, "i");
             filteredItems = itemData.filter(item => regex.test(item.title));
-        } catch (error) {
-            console.error("无效的正则表达式:", error);
+        } catch {
             alert("搜索关键字格式错误，请检查后重试！");
             filteredItems = [...itemData];
         }
@@ -91,36 +69,22 @@ function executeSearch(query) {
 
 function search() {
     const query = document.getElementById("search-input").value.trim();
-    
     const baseUrl = window.location.origin + window.location.pathname;
-    let newUrl;
-    
-    if (query === "") {
-        newUrl = baseUrl;
-    } else {
-        newUrl = `${baseUrl}?q=${encodeURIComponent(query)}`;
-    }
-    
-    window.location.href = newUrl;
+    window.location.href = query ? `${baseUrl}?q=${encodeURIComponent(query)}` : baseUrl;
 }
 
-function loadMoreItems() {
-    renderItems(false);
-}
+function loadMoreItems() { renderItems(false); }
 
 function openShareModal() {
-    const modal = document.getElementById("share-modal");
-    modal.style.display = "flex"; 
+    document.getElementById("share-modal").style.display = "flex";
 }
 
 function closeShareModal() {
-    const modal = document.getElementById("share-modal");
-    modal.style.display = "none";
+    document.getElementById("share-modal").style.display = "none";
 }
 
 async function shareViaNative() {
     closeShareModal(); 
-    
     if (navigator.share) {
         try {
             await navigator.share({
@@ -128,29 +92,20 @@ async function shareViaNative() {
                 text: "查看我在十月存档中发现的内容！",
                 url: window.location.href,
             });
-            console.log('成功使用原生分享');
         } catch (error) {
-            if (error.name !== 'AbortError') {
-                console.error('原生分享失败:', error);
-                alert("原生分享失败或被取消。请尝试跳转至主页。");
-            }
+            if (error.name !== 'AbortError') alert("原生分享失败或被取消。");
         }
-    } else {
-        alert("您的浏览器不支持原生分享功能。请尝试跳转至主页。");
-    }
+    } else alert("浏览器不支持原生分享。");
 }
 
 function redirectToCustomLink() {
-    const customUrl = "https://wwww.2024-10-24.zip"; 
-    window.open(customUrl, "_blank");
+    window.open("https://wwww.2024-10-24.zip", "_blank");
     closeShareModal();
 }
 
 window.onclick = function(event) {
     const modal = document.getElementById("share-modal");
-    if (event.target == modal) {
-        closeShareModal();
-    }
+    if (event.target == modal) closeShareModal();
 }
 
 function openChat() {
