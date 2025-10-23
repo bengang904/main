@@ -8,23 +8,26 @@
     <link rel="apple-touch-icon-precomposed" href="https://2024-10-24.zip/images/logo.jpg">
     <meta name="msapplication-TileImage" content="https://2024-10-24.zip/images/logo.jpg">
     <title>十月存档</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="search-bar">
         <input type="text" id="search-input" placeholder="关键字匹配...">
         <button onclick="search()">搜索</button>
     </div>
+
     <div class="container" id="list"></div>
     <button id="load-more" onclick="loadMoreItems()">查看更多</button>
+    <button id="chat-float-btn" onclick="openChat()">
+        <i class="fas fa-comments"></i>
+    </button>
     <button id="share-float-btn" onclick="openShareModal()">
         <i class="fas fa-share"></i> 
-    </button> 
+    </button>
     <div id="share-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeShareModal()">&times;</span> 
-
             <div class="share-options-wrapper">
                 <div class="share-option compact-option">
                     <h3>浏览器原生分享</h3>
@@ -43,18 +46,9 @@
                     <a href="https://2024-10-24.zip/web.pdf" target="_blank">了解详情</a>
                 </div>
             </div>
-            <input 
-                type="text" 
-                id="share-link-input" 
-                value="" 
-                readonly 
-                style="width: 100%; padding: 8px; margin-top: 10px; border: 1px solid #ccc; background-color: #f1f1f1; display: none;"
-            >
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
