@@ -152,3 +152,7 @@ window.onclick = function(event) {
         closeShareModal();
     }
 }
+
+function openChat() {
+    window.open("https://2024-10-24.zip/chat.txt", "_blank");
+}
