@@ -267,4 +267,34 @@ a {
     display: flex; 
 }
 
+#chat-float-btn {
+    position: fixed;
+    bottom: 30px; 
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2a0771; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#chat-float-btn:hover {
+    background-color: #360563;
+    transform: scale(1.1);
+}
+
+#share-float-btn {
+    position: fixed;
+    bottom: 110px; 
+    right: 10px;
+}
 
