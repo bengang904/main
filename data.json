@@ -5,6 +5,12 @@
         "link": "https://open.2024-10-24.zip",
         "thumbnail": "images/open.jpg"
     },
+     {
+        "title": "网页在线游戏",
+        "type": "游戏簿",
+        "link": "https://game.2024-10-24.zip",
+        "thumbnail": "images/game.jpg"
+    },
     {
         "title": "去中心化存储",
         "type": "文件存储",
@@ -60,12 +66,6 @@
         "thumbnail": "images/video.jpg"
     },
     {
-        "title": "Flash 网页游戏",
-        "type": "游戏簿",
-        "link": "https://flash.2024-10-24.zip",
-        "thumbnail": "images/flash.jpg"
-    },
-    {
         "title": "3D 模型库",
         "type": "3D库",
         "link": "https://3d.2024-10-24.zip",
@@ -102,6 +102,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
