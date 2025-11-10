@@ -57,7 +57,7 @@
         "title": "WindowsXP WASM",
         "type": "网页虚拟机",
         "link": "https://xp.2024-10-24.zip",
-        "thumbnail": "images/xp.png"
+        "thumbnail": "images/xp.jpg"
     },
     {
         "title": "开源定义地图",
@@ -108,6 +108,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
