@@ -84,28 +84,22 @@
         "thumbnail": "images/3d.jpg"
     },
     {
-        "title": "图像编辑工具",
+        "title": "图像工具",
         "type": "工具簿",
         "link": "https://photo.2024-10-24.zip",
         "thumbnail": "images/photo.jpg"
     },
      {
-        "title": "字符处理工具",
+        "title": "字符工具",
         "type": "工具簿",
         "link": "https://char.2024-10-24.zip",
         "thumbnail": "images/char.jpg"
     },
      {
-        "title": "音频处理工具",
+        "title": "音频工具",
         "type": "工具簿",
         "link": "https://audio.2024-10-24.zip",
         "thumbnail": "images/audio.jpg"
-    },
-     {
-        "title": "Unicode 字符簿",
-        "type": "字符簿",
-        "link": "https://unicode.2024-10-24.zip",
-        "thumbnail": "images/unicode.jpg"
     },
      {
         "title": "Tor 地址收录",
@@ -114,6 +108,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
