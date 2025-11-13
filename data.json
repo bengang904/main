@@ -1,5 +1,11 @@
 [
     {
+        "title": "教程博客",
+        "type": "博客",
+        "link": "https://blog.2024-10-24.zip",
+        "thumbnail": "images/blog.jpg"
+    },
+    {
         "title": "开源项目",
         "type": "项目",
         "link": "https://open.2024-10-24.zip",
@@ -108,6 +114,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
