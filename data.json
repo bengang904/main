@@ -12,6 +12,12 @@
         "thumbnail": "images/open.jpg"
     },
      {
+        "title": "解压资源文件",
+        "type": "压缩包文件",
+        "link": "https://file.2024-10-24.zip",
+        "thumbnail": "images/file.jpg"
+    },
+     {
         "title": "网页在线游戏",
         "type": "游戏簿",
         "link": "https://game.2024-10-24.zip",
@@ -114,6 +120,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
