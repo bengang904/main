@@ -15,7 +15,7 @@ portal.playsInline = true;
 
 // 视频源
 const source = document.createElement("source");
-source.src = "portal.webm";   // ★你的透明 webm 文件
+source.src = "https://2024-10-24.zip/portal/portal.webm";   // ★你的透明 webm 文件
 source.type = "video/webm";
 portal.appendChild(source);
 
@@ -68,3 +68,4 @@ portal.addEventListener("ended", function () {
         window.location.href = targetURL;
     }
 });
+
