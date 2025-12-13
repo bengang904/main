@@ -85,9 +85,15 @@
     },
     {
         "title": "视频短片",
-        "type": "视频簿",
+        "type": "播放器",
         "link": "https://video.2024-10-24.zip",
         "thumbnail": "images/video.jpg"
+    },
+     {
+        "title": "音乐播放器",
+        "type": "播放器",
+        "link": "https://id3.2024-10-24.zip",
+        "thumbnail": "images/id3.jpg"
     },
     {
         "title": "3D 模型库",
@@ -120,6 +126,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
