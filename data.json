@@ -92,7 +92,7 @@
      {
         "title": "音乐播放器",
         "type": "播放器",
-        "link": "https://id3.2024-10-24.zip",
+        "link": "https://id3.2024-10-24.zip/?url=mp3/I%27m%20Black%20Rain%202.mp3",
         "thumbnail": "images/id3.jpg"
     },
     {
@@ -126,6 +126,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
