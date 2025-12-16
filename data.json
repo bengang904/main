@@ -84,7 +84,7 @@
         "thumbnail": "images/bbs.jpg"
     },
     {
-        "title": "视频短片",
+        "title": "视频播放器",
         "type": "播放器",
         "link": "https://video.2024-10-24.zip",
         "thumbnail": "images/video.jpg"
@@ -126,6 +126,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
