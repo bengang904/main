@@ -77,12 +77,7 @@
         "link": "https://map.2024-10-24.zip",
         "thumbnail": "images/map.png"
     },
-    {
-        "title": "BBS 地址收录",
-        "type": "地址簿",
-        "link": "https://bbs.2024-10-24.zip",
-        "thumbnail": "images/bbs.jpg"
-    },
+    
     {
         "title": "视频播放器",
         "type": "播放器",
@@ -94,6 +89,12 @@
         "type": "播放器",
         "link": "https://id3.2024-10-24.zip/?url=mp3/I%27m%20Black%20Rain%202.mp3",
         "thumbnail": "images/id3.jpg"
+    },
+    {
+        "title": "打印列表",
+        "type": "打印",
+        "link": "https://print.2024-10-24.zip",
+        "thumbnail": "images/Print.jpg"
     },
     {
         "title": "3D 模型库",
@@ -119,6 +120,12 @@
         "link": "https://audio.2024-10-24.zip",
         "thumbnail": "images/audio.jpg"
     },
+    {
+        "title": "BBS 地址收录",
+        "type": "地址簿",
+        "link": "https://bbs.2024-10-24.zip",
+        "thumbnail": "images/bbs.jpg"
+    },
      {
         "title": "Tor 地址收录",
         "type": "地址簿",
@@ -126,6 +133,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
