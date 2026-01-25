@@ -94,7 +94,7 @@
         "title": "打印列表",
         "type": "打印",
         "link": "https://print.2024-10-24.zip",
-        "thumbnail": "images/Print.jpg"
+        "thumbnail": "images/Print.png"
     },
     {
         "title": "3D 模型库",
@@ -133,6 +133,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
