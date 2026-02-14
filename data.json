@@ -1,4 +1,10 @@
 [
+     {
+        "title": "相册存档",
+        "type": "相册",
+        "link": "https://img.2024-10-24.zip",
+        "thumbnail": "images/img.jpg"
+    },
     {
         "title": "教程博客",
         "type": "博客",
@@ -133,6 +139,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
