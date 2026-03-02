@@ -35,6 +35,12 @@
         "link": "https://dapp.2024-10-24.zip",
         "thumbnail": "images/dapp.png"
     },
+     {
+        "title": "日历存档",
+        "type": "日历",
+        "link": "https://gala.2024-10-24.zip",
+        "thumbnail": "images/gala.jpg"
+    },
     {
         "title": "网站地址收录",
         "type": "地址簿",
@@ -139,6 +145,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
