@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta property="og:title" content="十月黑雨">
     <meta property="og:site_name" content="存档">
     <meta property="og:description" content="点击查看更多存档的瞬间！">
@@ -14,13 +14,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="shortcut icon" href="https://2024-10-24.zip/images/logo.jpg">
     <link rel="icon" href="https://2024-10-24.zip/images/logo.jpg">
-    <link rel="apple-touch-icon-precomposed" href="https://2024-10-24.zip/images/logo.jpg">
-    <meta name="msapplication-TileImage" content="https://2024-10-24.zip/images/logo.jpg">
-    <meta name="description" content="十月黑雨 — 来自2024-10-24.zip的十月存档" />
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <meta name="author" content="黑雨">
-    <title>OBSIDIAN CORE | 2024-10-24.zip</title>
+    <title>2024-10-24.zip | OBSIDIAN CORE</title>
     <meta name="description" content="OBSIDIAN CORE 存档计划：致力于保存互联网珍贵资源。">
     <meta name="keywords" content="存档, 2024-10-24.zip, 资源保存">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -40,16 +35,20 @@
             box-sizing: border-box;
             border-radius: 0 !important;
             font-family: 'JetBrains Mono', sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
             height: 100vh;
+            height: 100dvh;
             background: var(--bg-deep);
             color: var(--text-main);
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            position: fixed;
+            width: 100%;
         }
 
         .app-frame {
@@ -57,7 +56,6 @@
             width: 100%;
             max-width: 1200px;
             height: 100%;
-            max-height: 800px;
             background: rgba(15, 15, 15, 0.9);
             border: 1px solid var(--border-color);
             position: relative;
@@ -74,6 +72,7 @@
 
         .sidebar-header {
             padding: 30px;
+            padding-top: calc(30px + env(safe-area-inset-top));
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -87,6 +86,7 @@
         .post-list {
             flex: 1;
             overflow-y: auto;
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         .post-list::-webkit-scrollbar { width: 3px; }
@@ -121,10 +121,12 @@
             display: flex;
             flex-direction: column;
             background: linear-gradient(180deg, rgba(0,255,149,0.02) 0%, transparent 100%);
+            height: 100%;
         }
 
         .reader-header {
             padding: 15px 30px;
+            padding-top: calc(15px + env(safe-area-inset-top));
             font-size: 10px;
             color: var(--text-dim);
             border-bottom: 1px solid var(--border-color);
@@ -148,14 +150,10 @@
             flex: 1;
             padding: 40px 50px;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
-        .content-area::-webkit-scrollbar {
-            width: 4px;
-        }
-        .content-area::-webkit-scrollbar-track {
-            background: transparent;
-        }
+        .content-area::-webkit-scrollbar { width: 4px; }
         .content-area::-webkit-scrollbar-thumb {
             background: var(--accent-dim);
             border: 1px solid var(--accent);
@@ -194,10 +192,12 @@
 
         .reader-footer {
             padding: 20px 30px;
+            padding-bottom: calc(20px + env(safe-area-inset-bottom));
             border-top: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
             background: var(--bg-deep);
+            z-index: 101;
         }
 
         .btn-ui {
@@ -213,7 +213,7 @@
         .btn-ui:hover { border-color: var(--accent); color: var(--accent); }
 
         @media (max-width: 768px) {
-            .app-frame { border: none; height: 100vh; }
+            .app-frame { border: none; }
             .sidebar {
                 width: 100%;
                 position: absolute;
@@ -244,7 +244,7 @@
             <header class="reader-header">
                 <div class="back-btn" onclick="toggleMobileView()">LIST_MENU</div>
                 <span>STATUS: ARCHIVE_MODE</span>
-                <span>https://2024-10-24.zip</span>
+                <span>2024-10-24.zip</span>
             </header>
 
             <article class="content-area">
@@ -318,6 +318,7 @@
             document.getElementById('article-title').innerText = data.title;
             document.getElementById('article-content').innerHTML = data.content;
             if (window.innerWidth <= 768) sidebar.classList.add('hidden');
+            document.querySelector('.content-area').scrollTop = 0;
         }
 
         function toggleMobileView() { sidebar.classList.remove('hidden'); }
