@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <meta name="author" content="黑雨">
-    <title>十月黑雨</title>
+    <title>MATRIX_NODE_SYS | 2024-10-24</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -35,58 +35,243 @@
       }
     }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'GreenEnergy';
+            src: url('Green_Energy.ttf') format('truetype');
+            font-display: swap;
+        }
+
+        :root {
+            --bg-black: #000000;
+            --card-border: #1a1a1a;
+            --accent-neon: #00f2ff;
+            --text-gray: #888;
+            --scanline: rgba(0, 0, 0, 0.35);
+        }
+
+        * { box-sizing: border-box; border-radius: 0 !important; }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
+            background: var(--bg-black);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .custom-font {
+            font-family: 'GreenEnergy', 'PingFang SC', sans-serif !important;
+        }
+
+        .top-bar {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .top-bar { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+        }
+
+        .header-info { border-left: 3px solid var(--accent-neon); padding-left: 15px; }
+        
+        .header-info h1 { 
+            font-size: 1.8rem; 
+            margin: 0; 
+            color: var(--accent-neon); 
+            line-height: 1.2;
+            font-weight: normal;
+        }
+
+        .header-info h1 span {
+            letter-spacing: 2px;
+        }
+        
+        .about-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 13px;
+            border-bottom: 1px dashed var(--text-gray);
+            transition: 0.3s;
+            margin-right: 15px;
+        }
+        .about-link:hover { color: #fff; border-bottom-color: #fff; }
+
+        .search-wrapper { position: relative; width: 100%; max-width: 400px; }
+        .search-input {
+            width: 100%;
+            background: #0a0a0a;
+            border: 1px solid var(--card-border);
+            color: var(--accent-neon);
+            padding: 12px 15px;
+            font-family: inherit;
+            outline: none;
+            transition: 0.3s;
+        }
+        .search-input:focus { border-color: var(--accent-neon); background: #111; }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 200px)); 
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center; 
+        }
+
+        @media (max-width: 360px) {
+            #container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .card {
+            background: #080808;
+            position: relative;
+            width: 100%;
+            max-width: 200px;
+            aspect-ratio: 1 / 1; 
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            cursor: pointer;
+            will-change: transform;
+        }
+
+        .img-wrapper { position: relative; width: 100%; height: 100%; background: #050505; }
+        .thumbnail { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        
+        .img-wrapper::after {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(var(--scanline) 50%, transparent 50%);
+            background-size: 100% 4px; pointer-events: none; z-index: 2;
+        }
+
+        .card:hover .thumbnail { transform: scale(1.1); }
+        .card:hover { border-color: var(--accent-neon); z-index: 5; box-shadow: 0 0 15px rgba(0,242,255,0.1); }
+
+        .overlay {
+            position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; 
+            background: linear-gradient(transparent, rgba(0,0,0,0.95)); z-index: 3;
+        }
+
+        .type-tag {
+            background: var(--accent-neon); color: black; font-size: 9px; 
+            font-weight: 900; padding: 1px 6px; display: inline-block; margin-bottom: 5px;
+        }
+
+        .title { 
+            font-size: 0.85rem; 
+            margin: 0; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+        }
+
+        .no-results { grid-column: 1/-1; text-align: center; padding: 100px 0; color: #444; }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--accent-neon); }
+    </style>
 </head>
 <body>
-    <div class="search-bar">
-        <input type="text" id="search-input" placeholder="关键字匹配...">
-        <button onclick="search()">搜索</button>
-    </div>
 
-    <div class="container" id="list"></div>
-    <button id="load-more" onclick="loadMoreItems()">查看更多</button>
-    <button id="chat-float-btn" onclick="openChat()">
-        <i class="fas fa-comments"></i>
-    </button>
-    <button id="share-float-btn" onclick="openShareModal()">
-        <i class="fas fa-share"></i> 
-    </button>
-    <div id="share-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeShareModal()">&times;</span> 
-            <div class="share-options-wrapper">
-                <div class="share-option compact-option">
-                    <h3>浏览器原生分享</h3>
-                    <p>设备原生分享链接</p>
-                    <button onclick="shareViaNative()">分享</button>
-                </div>
-
-                <div class="share-option compact-option">
-                    <h3>自定义转发链接</h3>
-                    <p>跳转至 https://wwww.2024-10-24.zip</p>
-                    <button onclick="redirectToCustomLink()">跳转</button>
-                </div>
-
-                <div class="share-option compact-option">
-                    <h3>关于此网站的故事</h3>
-                    <a href="https://2024-10-24.zip/web.pdf" target="_blank">了解详情</a>
-                </div>
-            </div>
+    <div class="top-bar">
+        <div class="header-info">
+            <h1>
+                <span class="custom-font">MATRIX NODE SYS</span> 
+            </h1>
+            <a href="https://2024-10-24.zip/web.pdf" target="_blank" class="about-link">
+                > <span class="custom-font">ABOUT SYS README</span>
+            </a>
+            <a href="https://2024-10-24.zip/chat.txt" target="_blank" class="about-link">
+                > <span class="custom-font">CHAT LOG</span>
+            </a>
+        </div>
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="search-input custom-font" placeholder="SEARCH_TITLE_OR_TYPE...">
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "eaaba61ba3cd401f8513d5a4bb320e55"}'></script><!-- End Cloudflare Web Analytics -->
+    <div id="container"></div>
+
+    <script>
+        let allResources = [];
+
+        async function initMatrix() {
+            const container = document.getElementById('container');
+            try {
+                const response = await fetch('data.json');
+                allResources = await response.json();
+                renderCards(allResources);
+            } catch (e) {
+                container.innerHTML = `<div class="no-results">SYSTEM_ERR: DATA_LOAD_FAILED</div>`;
+            }
+        }
+
+        function renderCards(data) {
+            const container = document.getElementById('container');
+            if (data.length === 0) {
+                container.innerHTML = `<div class="no-results">QUERY_EMPTY</div>`;
+                return;
+            }
+
+            const fragment = document.createDocumentFragment();
+            data.forEach((item) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.dataset.link = item.link;
+                
+                let typeHtml = '';
+                const typeStr = String(item.type);
+                for (let char of typeStr) {
+                    if (/[a-zA-Z]/.test(char)) {
+                        typeHtml += `<span class="custom-font">${char}</span>`;
+                    } else {
+                        typeHtml += `<span>${char}</span>`;
+                    }
+                }
+
+                card.innerHTML = `
+                    <div class="img-wrapper">
+                        <img class="thumbnail" 
+                             src="${item.thumbnail}" 
+                             loading="lazy" 
+                             onerror="this.src='https://via.placeholder.com/200/000000/00f2ff?text=DATA_MISSING'">
+                        <div class="overlay">
+                            <span class="type-tag">${typeHtml}</span>
+                            <h2 class="title">${item.title}</h2>
+                        </div>
+                    </div>
+                `;
+                fragment.appendChild(card);
+            });
+
+            container.innerHTML = '';
+            container.appendChild(fragment);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const filtered = allResources.filter(i => 
+                i.title.toLowerCase().includes(term) || 
+                i.type.toLowerCase().includes(term)
+            );
+            renderCards(filtered);
+        });
+
+        document.getElementById('container').addEventListener('click', (e) => {
+            const target = e.target.closest('.card');
+            if (target) window.open(target.dataset.link, '_blank');
+        });
+
+        initMatrix();
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
