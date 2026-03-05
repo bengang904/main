@@ -1,5 +1,11 @@
 [
      {
+        "title": "开源免费应用",
+        "type": "应用簿",
+        "link": "https://app.2024-10-24.zip",
+        "thumbnail": "images/app.png"
+    },
+     {
         "title": "HTML",
         "type": "代码",
         "link": "https://2024-10-24.zip/2024-10-24.zip",
@@ -18,7 +24,7 @@
         "thumbnail": "images/blog.jpg"
     },
     {
-        "title": "开源项目",
+        "title": "我们的开源项目",
         "type": "项目",
         "link": "https://open.2024-10-24.zip",
         "thumbnail": "images/open.jpg"
@@ -53,12 +59,7 @@
         "link": "https://web.2024-10-24.zip",
         "thumbnail": "images/web.jpg"
     },
-     {
-        "title": "开源免费应用",
-        "type": "应用簿",
-        "link": "https://app.2024-10-24.zip",
-        "thumbnail": "images/app.png"
-    },
+     
      {
         "title": "Chrome WebStore",
         "type": "扩展程序",
@@ -133,6 +134,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
