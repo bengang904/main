@@ -59,6 +59,7 @@
             margin: 0;
             padding: 20px;
             -webkit-font-smoothing: antialiased;
+            user-select: none;
         }
 
         .custom-font {
@@ -218,7 +219,7 @@
         function renderCards(data) {
             const container = document.getElementById('container');
             if (data.length === 0) {
-                container.innerHTML = `<div class="no-results">QUERY_EMPTY</div>`;
+                container.innerHTML = `<div class="no-results custom-font">QUERY EMPTY</div>`;
                 return;
             }
 
