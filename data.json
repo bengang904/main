@@ -53,29 +53,11 @@
         "link": "https://web.2024-10-24.zip",
         "thumbnail": "images/web.jpg"
     },
-    {
-        "title": "Windows 免费应用",
-        "type": "应用簿",
-        "link": "https://winapp.2024-10-24.zip",
-        "thumbnail": "images/winapp.jpg"
-    },
-    {
-        "title": "MacOS 免费应用",
-        "type": "应用簿",
-        "link": "https://macapp.2024-10-24.zip",
-        "thumbnail": "images/macapp.jpg"
-    },
-    {
-        "title": "Android 免费应用",
-        "type": "应用簿",
-        "link": "https://apkapp.2024-10-24.zip",
-        "thumbnail": "images/apkapp.jpg"
-    },
      {
-        "title": "ios 免费应用",
+        "title": "开源免费应用",
         "type": "应用簿",
-        "link": "https://iosapp.2024-10-24.zip",
-        "thumbnail": "images/iosapp.png"
+        "link": "https://app.2024-10-24.zip",
+        "thumbnail": "images/app.png"
     },
      {
         "title": "Chrome WebStore",
@@ -151,6 +133,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
