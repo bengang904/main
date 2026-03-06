@@ -75,7 +75,7 @@
     {
         "title": "开源定义地图",
         "type": "地图簿",
-        "link": "https://map.2024-10-24.zip",
+        "link": "https://map.2024-10-24.zip/?file=data.kml",
         "thumbnail": "images/map.png"
     },
      {
@@ -139,6 +139,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
