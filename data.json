@@ -90,12 +90,6 @@
         "link": "https://video.2024-10-24.zip",
         "thumbnail": "images/video.jpg"
     },
-     {
-        "title": "音乐播放器",
-        "type": "播放器",
-        "link": "https://id3.2024-10-24.zip/?url=mp3/I%27m%20Black%20Rain%202.mp3",
-        "thumbnail": "images/id3.jpg"
-    },
     {
         "title": "打印列表",
         "type": "打印",
@@ -139,6 +133,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
