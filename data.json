@@ -6,10 +6,10 @@
         "thumbnail": "images/app.jpg"
     },
      {
-        "title": "HTML",
-        "type": "代码",
-        "link": "https://2024-10-24.zip/2024-10-24.zip",
-        "thumbnail": "images/logo.jpg"
+        "title": "最受欢迎 10000 首歌曲",
+        "type": "歌曲",
+        "link": "https://music.2024-10-24.zip",
+        "thumbnail": "images/music.jpg"
     },
      {
         "title": "相册存档",
@@ -78,7 +78,12 @@
         "link": "https://map.2024-10-24.zip",
         "thumbnail": "images/map.png"
     },
-    
+     {
+        "title": "HTML",
+        "type": "代码",
+        "link": "https://2024-10-24.zip/2024-10-24.zip",
+        "thumbnail": "images/logo.jpg"
+    },
     {
         "title": "视频播放器",
         "type": "播放器",
@@ -134,6 +139,7 @@
         "thumbnail": "images/tor.jpg"
     }
 ]
+
 
 
 
