@@ -24,10 +24,10 @@
         "thumbnail": "images/blog.jpg"
     },
     {
-        "title": "我们的开源项目",
-        "type": "项目",
-        "link": "https://open.2024-10-24.zip",
-        "thumbnail": "images/open.jpg"
+        "title": "FFmpeg在线运行",
+        "type": "ffmpeg",
+        "link": "https://ffmpeg.2024-10-24.zip",
+        "thumbnail": "images/ffmpeg.jpg"
     },
      {
         "title": "解压资源文件",
@@ -131,8 +131,15 @@
         "type": "地址簿",
         "link": "https://tor.2024-10-24.zip",
         "thumbnail": "images/tor.jpg"
+    },
+     {
+        "title": "我们的开源项目",
+        "type": "项目",
+        "link": "https://open.2024-10-24.zip",
+        "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
