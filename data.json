@@ -48,6 +48,12 @@
         "thumbnail": "images/video.jpg"
     },
      {
+        "title": "字符工具",
+        "type": "工具簿",
+        "link": "https://char.2024-10-24.zip",
+        "thumbnail": "images/char.png"
+    },
+     {
         "title": "解压资源文件",
         "type": "压缩包文件",
         "link": "https://file.2024-10-24.zip",
@@ -114,14 +120,7 @@
         "type": "工具簿",
         "link": "https://photo.2024-10-24.zip",
         "thumbnail": "images/photo.jpg"
-    },
-     {
-        "title": "字符工具",
-        "type": "工具簿",
-        "link": "https://char.2024-10-24.zip",
-        "thumbnail": "images/char.jpg"
-    },
-   
+    },   
     {
         "title": "BBS 地址收录",
         "type": "地址簿",
@@ -141,6 +140,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
