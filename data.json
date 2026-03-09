@@ -20,8 +20,8 @@
      {
         "title": "相册存档",
         "type": "相册",
-        "link": "https://img.2024-10-24.zip",
-        "thumbnail": "images/img.jpg"
+        "link": "https://photo.2024-10-24.zip",
+        "thumbnail": "images/photo.jpg"
     },
     {
         "title": "教程博客",
@@ -118,8 +118,8 @@
     {
         "title": "图像工具",
         "type": "工具簿",
-        "link": "https://photo.2024-10-24.zip",
-        "thumbnail": "images/photo.jpg"
+        "link": "https://image.2024-10-24.zip",
+        "thumbnail": "images/image.jpg"
     },   
     {
         "title": "BBS 地址收录",
@@ -140,6 +140,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
