@@ -30,13 +30,13 @@
         "thumbnail": "images/blog.jpg"
     },
     {
-        "title": "FFmpeg在线运行",
+        "title": "FFmpeg 在线运行",
         "type": "ffmpeg",
         "link": "https://ffmpeg.2024-10-24.zip",
         "thumbnail": "images/ffmpeg.jpg"
     },
      {
-        "title": "ImageMagick在线运行",
+        "title": "ImageMagick 在线运行",
         "type": "ImageMagick",
         "link": "https://ImageMagick.2024-10-24.zip",
         "thumbnail": "images/ImageMagick.jpg"
@@ -146,6 +146,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
