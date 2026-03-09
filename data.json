@@ -50,8 +50,8 @@
      {
         "title": "字符工具",
         "type": "工具簿",
-        "link": "https://char.2024-10-24.zip",
-        "thumbnail": "images/char.png"
+        "link": "https://text.2024-10-24.zip",
+        "thumbnail": "images/text.png"
     },
      {
         "title": "解压资源文件",
@@ -140,6 +140,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
