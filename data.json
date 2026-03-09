@@ -35,6 +35,12 @@
         "link": "https://ffmpeg.2024-10-24.zip",
         "thumbnail": "images/ffmpeg.jpg"
     },
+     {
+        "title": "ImageMagick在线运行",
+        "type": "ImageMagick",
+        "link": "https://ImageMagick.2024-10-24.zip",
+        "thumbnail": "images/ImageMagick.jpg"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
@@ -140,6 +146,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
