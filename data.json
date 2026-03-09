@@ -42,6 +42,12 @@
         "thumbnail": "images/audio.jpg"
     },
      {
+        "title": "视频工具",
+        "type": "工具簿",
+        "link": "https://video.2024-10-24.zip",
+        "thumbnail": "images/video.jpg"
+    },
+     {
         "title": "解压资源文件",
         "type": "压缩包文件",
         "link": "https://file.2024-10-24.zip",
@@ -92,12 +98,6 @@
         "thumbnail": "images/logo.jpg"
     },
     {
-        "title": "视频播放器",
-        "type": "播放器",
-        "link": "https://video.2024-10-24.zip",
-        "thumbnail": "images/video.jpg"
-    },
-    {
         "title": "打印列表",
         "type": "打印",
         "link": "https://print.2024-10-24.zip",
@@ -141,6 +141,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
