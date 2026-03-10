@@ -108,30 +108,11 @@
         "link": "https://xp.2024-10-24.zip",
         "thumbnail": "images/xp.jpg"
     },
-    
-     {
-        "title": "HTML",
-        "type": "代码",
-        "link": "https://2024-10-24.zip/2024-10-24.zip",
-        "thumbnail": "images/logo.jpg"
-    },
-    {
-        "title": "打印列表",
-        "type": "打印",
-        "link": "https://print.2024-10-24.zip",
-        "thumbnail": "images/Print.png"
-    },
     {
         "title": "3D 模型库",
         "type": "3D库",
         "link": "https://3d.2024-10-24.zip",
         "thumbnail": "images/3d.jpg"
-    },
-    {
-        "title": "BBS 地址收录",
-        "type": "地址簿",
-        "link": "https://bbs.2024-10-24.zip",
-        "thumbnail": "images/bbs.jpg"
     },
      {
         "title": "Tor 地址收录",
@@ -146,6 +127,7 @@
         "thumbnail": "images/open.jpg"
     }
 ]
+
 
 
 
