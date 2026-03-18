@@ -91,6 +91,12 @@
         "thumbnail": "images/web.jpg"
     },
      {
+        "title": "开源漫画",
+        "type": "漫画",
+        "link": "https://oc.2024-10-24.zip",
+        "thumbnail": "images/oc.jpg"
+    },
+     {
         "title": "开源定义地图",
         "type": "地图簿",
         "link": "https://map.2024-10-24.zip/?file=data.kml",
