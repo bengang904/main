@@ -108,23 +108,30 @@
         "link": "https://webstore.2024-10-24.zip",
         "thumbnail": "images/webstore.png"
     },
-    {
-        "title": "WindowsXP WASM",
-        "type": "网页虚拟机",
-        "link": "https://xp.2024-10-24.zip",
-        "thumbnail": "images/xp.jpg"
-    },
+   
     {
         "title": "3D 模型库",
         "type": "3D库",
         "link": "https://3d.2024-10-24.zip",
         "thumbnail": "images/3d.jpg"
     },
+      {
+        "title": "人脸识别数据库",
+        "type": "数据库",
+        "link": "https://face.2024-10-24.zip?db=db/2026-03-23.db",
+        "thumbnail": "images/face.png"
+    },
      {
         "title": "Tor 地址收录",
         "type": "地址簿",
         "link": "https://tor.2024-10-24.zip",
         "thumbnail": "images/tor.jpg"
+    },
+      {
+        "title": "WindowsXP WASM",
+        "type": "网页虚拟机",
+        "link": "https://xp.2024-10-24.zip",
+        "thumbnail": "images/xp.jpg"
     },
      {
         "title": "我们的开源项目",
