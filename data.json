@@ -121,6 +121,12 @@
         "link": "https://face.2024-10-24.zip?db=db/2026-03-25.db",
         "thumbnail": "images/face.png"
     },
+      {
+        "title": "Ai 对话",
+        "type": "人工智能",
+        "link": "https://ai.2024-10-24.zipb",
+        "thumbnail": "images/ai.png"
+    },
      {
         "title": "Tor 地址收录",
         "type": "地址簿",
