@@ -18,6 +18,12 @@
         "thumbnail": "images/gala.jpg"
     },
      {
+        "title": "视频分享",
+        "type": "视频",
+        "link": "https://video.2024-10-24.zip",
+        "thumbnail": "images/video.jpg"
+    },
+     {
         "title": "相册存档",
         "type": "相册",
         "link": "https://photo.2024-10-24.zip",
@@ -46,12 +52,6 @@
         "type": "工具簿",
         "link": "https://audio.2024-10-24.zip",
         "thumbnail": "images/audio.jpg"
-    },
-     {
-        "title": "视频工具",
-        "type": "工具簿",
-        "link": "https://video.2024-10-24.zip",
-        "thumbnail": "images/video.jpg"
     },
      {
         "title": "图像工具",
