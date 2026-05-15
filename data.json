@@ -29,6 +29,12 @@
         "link": "https://photo.2024-10-24.zip",
         "thumbnail": "images/photo.jpg"
     },
+      {
+        "title": "歌曲馆藏",
+        "type": "歌曲",
+        "link": "https://ml.2024-10-24.zip",
+        "thumbnail": "images/ml.jpg"
+    },
     {
         "title": "教程博客",
         "type": "博客",
