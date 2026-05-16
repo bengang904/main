@@ -42,6 +42,12 @@
         "thumbnail": "images/blog.jpg"
     },
     {
+        "title": "图像编辑",
+        "type": "图像",
+        "link": "https://photopea.2024-10-24.zip",
+        "thumbnail": "images/photopea.png"
+    },
+    {
         "title": "FFmpeg 在线运行",
         "type": "ffmpeg",
         "link": "https://ffmpeg.2024-10-24.zip",
