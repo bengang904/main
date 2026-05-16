@@ -59,6 +59,18 @@
         "link": "https://ImageMagick.2024-10-24.zip",
         "thumbnail": "images/ImageMagick.jpg"
     },
+      {
+        "title": "网页在线游戏",
+        "type": "游戏簿",
+        "link": "https://game.2024-10-24.zip",
+        "thumbnail": "images/game.jpg"
+    },
+       {
+        "title": "网站地址收录",
+        "type": "地址簿",
+        "link": "https://web.2024-10-24.zip",
+        "thumbnail": "images/web.jpg"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
@@ -78,17 +90,18 @@
         "thumbnail": "images/text.png"
     },
      {
+        "title": "Linux WASM",
+        "type": "网页虚拟机",
+        "link": "https://linux.2024-10-24.zip",
+        "thumbnail": "images/linux.jpg"
+    },
+     {
         "title": "解压资源文件",
         "type": "压缩包文件",
         "link": "https://file.2024-10-24.zip",
         "thumbnail": "images/file.jpg"
     },
-     {
-        "title": "网页在线游戏",
-        "type": "游戏簿",
-        "link": "https://game.2024-10-24.zip",
-        "thumbnail": "images/game.jpg"
-    },
+    
     {
         "title": "去中心化网站",
         "type": "状态监控面板",
@@ -96,12 +109,7 @@
         "thumbnail": "images/dapp.png"
     },
      
-    {
-        "title": "网站地址收录",
-        "type": "地址簿",
-        "link": "https://web.2024-10-24.zip",
-        "thumbnail": "images/web.jpg"
-    },
+  
      {
         "title": "开源漫画",
         "type": "漫画",
@@ -144,12 +152,6 @@
         "type": "地址簿",
         "link": "https://tor.2024-10-24.zip",
         "thumbnail": "images/tor.jpg"
-    },
-      {
-        "title": "WindowsXP WASM",
-        "type": "网页虚拟机",
-        "link": "https://xp.2024-10-24.zip",
-        "thumbnail": "images/xp.jpg"
     },
      {
         "title": "我们的开源项目",
