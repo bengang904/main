@@ -71,6 +71,12 @@
         "link": "https://web.2024-10-24.zip",
         "thumbnail": "images/web.jpg"
     },
+      {
+        "title": "Web Office",
+        "type": "Office",
+        "link": "https://office.2024-10-24.zip",
+        "thumbnail": "images/office.png"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
