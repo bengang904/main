@@ -83,6 +83,12 @@
         "link": "https://openscad.2024-10-24.zip",
         "thumbnail": "images/openscad.jpg"
     },
+      {
+        "title": "LibreCAD",
+        "type": "CAD",
+        "link": "https://librecad.2024-10-24.zip",
+        "thumbnail": "images/librecad.png"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
