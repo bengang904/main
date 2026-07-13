@@ -77,6 +77,12 @@
         "link": "https://office.2024-10-24.zip",
         "thumbnail": "images/office.png"
     },
+      {
+        "title": "OpenSCAD",
+        "type": "CAD",
+        "link": "https://openscad.2024-10-24.zip",
+        "thumbnail": "images/openscad.jpg"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
