@@ -47,6 +47,12 @@
         "link": "https://photopea.2024-10-24.zip",
         "thumbnail": "images/photopea.png"
     },
+      {
+        "title": "图像压缩",
+        "type": "压缩",
+        "link": "https://compressorio.2024-10-24.zip",
+        "thumbnail": "images/compressorio.png"
+    },
     {
         "title": "FFmpeg 在线运行",
         "type": "ffmpeg",
