@@ -177,6 +177,12 @@
         "link": "https://ai.2024-10-24.zip",
         "thumbnail": "images/ai.png"
     },
+      {
+        "title": "Symbian 系统",
+        "type": "EKA2L1",
+        "link": "https://symbian.2024-10-24.zip",
+        "thumbnail": "images/symbian.jpg"
+    },
      {
         "title": "Tor 地址收录",
         "type": "地址簿",
