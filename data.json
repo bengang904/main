@@ -101,6 +101,12 @@
         "link": "https://librecad.2024-10-24.zip",
         "thumbnail": "images/librecad.png"
     },
+      {
+        "title": "WebRTC",
+        "type": "会议",
+        "link": "https://webrtc.2024-10-24.zip",
+        "thumbnail": "images/webrtc.png"
+    },
        {
         "title": "音频工具",
         "type": "工具簿",
