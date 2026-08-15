@@ -42,10 +42,16 @@
         "thumbnail": "images/blog.jpg"
     },
     {
-        "title": "图像编辑",
-        "type": "图像",
+        "title": "Photopea",
+        "type": "图像编辑",
         "link": "https://photopea.2024-10-24.zip",
         "thumbnail": "images/photopea.png"
+    },
+     {
+        "title": "Pixelorama",
+        "type": "图像编辑",
+        "link": "https://pixelorama.2024-10-24.zip",
+        "thumbnail": "images/pixelorama.png"
     },
       {
         "title": "图像压缩",
