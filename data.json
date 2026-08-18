@@ -108,6 +108,12 @@
         "thumbnail": "images/librecad.png"
     },
       {
+        "title": "Audacity",
+        "type": "音频工具",
+        "link": "https://audacity.2024-10-24.zip",
+        "thumbnail": "images/audacity.jpg"
+    },
+      {
         "title": "WebRTC",
         "type": "会议",
         "link": "https://webrtc.2024-10-24.zip",
