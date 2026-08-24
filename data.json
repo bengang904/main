@@ -113,6 +113,12 @@
         "link": "https://audacity.2024-10-24.zip",
         "thumbnail": "images/audacity.jpg"
     },
+       {
+        "title": "ChipTone",
+        "type": "音频工具",
+        "link": "https://chiptone.2024-10-24.zip",
+        "thumbnail": "images/ChipTone.jpg"
+    },
       {
         "title": "WebRTC",
         "type": "会议",
