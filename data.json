@@ -163,12 +163,6 @@
         "thumbnail": "images/oc.jpg"
     },
      {
-        "title": "开源定义地图",
-        "type": "地图簿",
-        "link": "https://map.2024-10-24.zip/?url=points.json",
-        "thumbnail": "images/map.png"
-    },
-     {
         "title": "Chrome WebStore",
         "type": "扩展程序",
         "link": "https://webstore.2024-10-24.zip",
