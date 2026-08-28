@@ -123,13 +123,13 @@
         "title": "WebRTC M",
         "type": "会议",
         "link": "https://webrtcm.2024-10-24.zip",
-        "thumbnail": "images/webrtcm.png"
+        "thumbnail": "images/webrtc.png"
     },
       {
         "title": "WebRTC X",
         "type": "推文",
         "link": "https://webrtcx.2024-10-24.zip",
-        "thumbnail": "images/webrtcx.png"
+        "thumbnail": "images/webrtc.png"
     },
        {
         "title": "音频工具",
