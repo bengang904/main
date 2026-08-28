@@ -120,10 +120,16 @@
         "thumbnail": "images/ChipTone.jpg"
     },
       {
-        "title": "WebRTC",
+        "title": "WebRTC M",
         "type": "会议",
-        "link": "https://webrtc.2024-10-24.zip",
-        "thumbnail": "images/webrtc.png"
+        "link": "https://webrtcm.2024-10-24.zip",
+        "thumbnail": "images/webrtcm.png"
+    },
+      {
+        "title": "WebRTC X",
+        "type": "推文",
+        "link": "https://webrtcx.2024-10-24.zip",
+        "thumbnail": "images/webrtcx.png"
     },
        {
         "title": "音频工具",
