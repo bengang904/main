@@ -96,6 +96,12 @@
         "thumbnail": "images/office.png"
     },
       {
+        "title": "hogandoc",
+        "type": "文档工具",
+        "link": " https://hogandoc.2024-10-24.zip",
+        "thumbnail": "images/hogandoc.png"
+    },
+      {
         "title": "OpenSCAD",
         "type": "CAD",
         "link": "https://openscad.2024-10-24.zip",
