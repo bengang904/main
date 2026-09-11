@@ -12,12 +12,6 @@
         "thumbnail": "images/game.webp"
     },
      {
-        "title": "日历存档",
-        "type": "日历",
-        "link": "https://gala.2024-10-24.zip",
-        "thumbnail": "images/gala.jpg"
-    },
-     {
         "title": "视频分享",
         "type": "视频",
         "link": "https://video.2024-10-24.zip",
@@ -40,6 +34,12 @@
         "type": "博客",
         "link": "https://blog.2024-10-24.zip",
         "thumbnail": "images/blog.webp"
+    },
+     {
+        "title": "日历存档",
+        "type": "日历",
+        "link": "https://gala.2024-10-24.zip",
+        "thumbnail": "images/gala.webp"
     },
     {
         "title": "Photopea",
