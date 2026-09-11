@@ -5,6 +5,12 @@
         "link": "https://app.2024-10-24.zip",
         "thumbnail": "images/app.jpg"
     },
+       {
+        "title": "网页版游戏",
+        "type": "游戏簿",
+        "link": "https://game.2024-10-24.zip",
+        "thumbnail": "images/game.webp"
+    },
      {
         "title": "最受欢迎 10000 首歌曲",
         "type": "歌曲",
@@ -76,12 +82,6 @@
         "type": "ImageMagick",
         "link": "https://ImageMagick.2024-10-24.zip",
         "thumbnail": "images/ImageMagick.jpg"
-    },
-      {
-        "title": "网页在线游戏",
-        "type": "游戏簿",
-        "link": "https://game.2024-10-24.zip",
-        "thumbnail": "images/game.jpg"
     },
        {
         "title": "网站地址收录",
