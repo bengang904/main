@@ -54,8 +54,8 @@
         "thumbnail": "images/pixelorama.webp"
     },
       {
-        "title": "图像压缩",
-        "type": "压缩",
+        "title": "Compressor",
+        "type": "图像压缩",
         "link": "https://compressorio.2024-10-24.zip",
         "thumbnail": "images/compressorio.webp"
     },
