@@ -102,6 +102,12 @@
         "thumbnail": "images/librecad.webp"
     },
       {
+        "title": "Kiri:Moto",
+        "type": "3D打印切片",
+        "link": "https://kirimoto.2024-10-24.zip",
+        "thumbnail": "images/kirimoto.webp"
+    },
+      {
         "title": "Audacity",
         "type": "音频工具",
         "link": "https://audacity.2024-10-24.zip",
